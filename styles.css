@@ -242,11 +242,14 @@ a {
 }
 
 .sec-title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: var(--accent-color);
+    margin-bottom: 2rem;
     text-align: center;
-    margin-top: 3rem;
-    animation: fadeIn 0.8s ease both;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    width: 100%;
 }
 
 .book-shelf {
@@ -273,6 +276,107 @@ a {
 .book img:hover {
     transform: translateY(-8px);
     box-shadow: 5px 4px 10px rgb(199 199 199);
+}
+
+/* About Section  */
+.about-sec {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.about-img {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.about-img:hover img {
+    transform: scale(1.05);
+}
+
+.about-txt {
+    text-align: justify;
+}
+
+.about-txt p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(44, 90, 160, 0.3);
+}
+
+.btn i {
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.btn:hover i {
+    transform: translateX(-5px);
+}
+
+/* Responsive Design for About Section */
+@media screen and (max-width: 1024px) {
+    .about-sec {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-txt {
+        text-align: center;
+    }
+
+    .about-txt p {
+        font-size: 1.3px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .section {
+        margin: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .sec-title {
+        font-size: 1.8rem;
+    }
+
+    .about-txt p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
 }
 
 /* Book Page Styles */
@@ -339,6 +443,7 @@ a {
     border: 1px solid var(--nav-link-color);
 }
 
+.btn,
 .download-btn,
 .order-btn {
     background: linear-gradient(135deg, var(--accent-color) 0%, #1e3a8a 100%);
