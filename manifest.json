@@ -1,0 +1,12 @@
+{
+    "name": "شاہد ماکلی - جدید سائنسی جمالیات کے رجحان ساز شاعر",
+    "short_name": "شاہد ماکلی",
+    "description": "شاہد ماکلی کی اردو اور سرائیکی شاعری کی کتب",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f8f9fa",
+    "theme_color": "#2c5aa0",
+    "orientation": "any",
+    "lang": "ur",
+    "dir": "rtl"
+}
